@@ -1,0 +1,9 @@
+
+def countfrequencyNuc(seq): # we define a function "countfrequencyNuc" that is taking one argument "seq"
+    tempdictionary_Freq = {"A": 0, "C": 0, "G": 0, "T": 0} # create a dictionary of base pairs with variable name "tempdictionary_Freq"
+    for Nuc in seq: #using for loop function for iterating over each of the character with "nuc" in input of "seq"
+        tempdictionary_Freq[Nuc] += 1 
+    return tempdictionary_Freq
+string_dna = "AGCTTTGGGAAACTG" 
+result = countfrequencyNuc(string_dna)
+print(result)
